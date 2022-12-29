@@ -1,6 +1,6 @@
 # Nano React App Default Javascript Template
 
-###Find the [deployed version](https://parth-react-tictactoe.surge.sh/) of this game.
+### Find the [deployed version](https://parth-react-tictactoe.surge.sh/) of this game.
 
 The default template project for [nano-react-app](https://github.com/nano-react-app/nano-react-app).
 
