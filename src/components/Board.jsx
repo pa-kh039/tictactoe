@@ -1,34 +1,9 @@
 // get the below snippet using rafce
-import React, { useState } from 'react';
+import React from 'react';
 
 import Square from './Square';
 
-const Board = () => {
-  const [board, setBoard] = useState(Array(9).fill(null));
-  const [isXNext, setisXNext]=useState(false)
-  // console.log(board);
-  const handleSquareClick = (position) => { 
-    if (board[position])
-    {
-      return; //doing nothing if the square is already filled
-    }
-    setBoard((prev) => {
-      return prev.map( (square,pos)=>{
-        if(pos===position)
-        {
-          if (isXNext===true){
-              setisXNext(false);
-              return 'X';
-          }
-          else {
-            setisXNext(true);
-            return 'O';
-          }
-        }
-        return square;
-      })
-    }); 
-  };
+const Board = ({handleSquareClick,board}) => {
   
   const renderSquare = (position) => {
     return (
