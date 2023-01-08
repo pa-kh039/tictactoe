@@ -24,7 +24,7 @@ const StatusMessage = ({ winner, current }) => {
        }
       {/* {!winner && !noMovesLeft && `It's turn of ${current.isXNext ? 'X' : 'O'}`} */}
       {/*this will be rendered if it retrns true*/}
-      {noMovesLeft && 
+      {noMovesLeft && !winner &&
       <>
       It's a Draw between <span className="text-green">X</span> and <span className="text-orange">O</span>
       </>
